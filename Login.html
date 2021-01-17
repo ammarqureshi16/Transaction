@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./Log.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+  </head>
+  <!-- Our project just needs Font Awesome solid + brand -->
+    <script defer src="/your-path-to-fontawesome/js/brands.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/solid.js"></script>
+    <script defer src="/your-path-to-fontawesome/js/fontawesome.js"></script>
+  <body>
+    <!-- Main div open -->
+    <div class="main-div">
+        <!-- Imag div open -->
+        <div style="border: solid black;width: 70%;height: 30rem;background-image: url(glasses.jpg);">
+
+        </div>
+        <!-- IMag div close -->
+      <!-- Form card div open -->
+      <div class="card-div">
+        <h1 class="heading-login">
+          <i> Login </i>
+        </h1>
+        <input
+          id="email-input"
+          class="form-control input-field"
+          type="email"
+          placeholder=" Email "
+        />
+        <input
+          id="password-input"
+          class="form-control input-field"
+          type="password"
+          placeholder=" Password "
+          />
+          <!-- Sign Up Div Open -->
+        <div class="btn-div">
+          <button id="singup-button" class="btn btn-success" onclick="login()"> Sign Up </button>
+        </div>
+        <!-- Sign Up Div Close -->
+        <!-- Buttons div open  -->
+        <div class="btns-div">
+            <button onclick="gotoFacebook()" id="fb-button" class="btn btn-pirmray">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>   
+          </svg>
+        Facbook
+        </button>
+      <!-- Buttons Div close -->
+        </div>
+        <!-- Form Card Div close -->
+      </div>
+    </div> 
+    <!-- Main div close -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBQN8yAISzHKk5YKOWtn_ey022phlDElqs",
+      authDomain: "test-app-82515.firebaseapp.com",
+      projectId: "test-app-82515",
+      storageBucket: "test-app-82515.appspot.com",
+      messagingSenderId: "751659478170",
+      appId: "1:751659478170:web:af6050e95568dc78864323",
+      measurementId: "G-T0G15L7PE6",
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth();
+  </script>
+  <script src="Login.js"></script>
+  </html>

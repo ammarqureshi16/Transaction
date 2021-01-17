@@ -18,10 +18,11 @@
     />
   </head>
   <body>
+
     <!-- Nav bar Satard her -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
-        <a style="color: white" class="navbar-brand" href="#">Navbar</a>
+        <a style="color: white" class="navbar-brand" href="#"> Navbar </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -75,6 +76,7 @@
               </ul>
             </li>
           </ul>
+          <button style="background-color: white;" onclick="logout();"  class="btn btn-pirmray"> Logout </button>
         </div>
       </div>
     </nav>
@@ -183,6 +185,7 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
 <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -201,4 +204,5 @@
 
 </script>
   <script src="transaction.js" ></script>
+  <script src="Login.js" ></script>
 </html>
