@@ -1,0 +1,58 @@
+/* #parent-ul  */
+.firstdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+.maindiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+#apply-butto:hover{
+ background-color: rgb(45, 72, 230);
+}
+#apply-button{
+    color: white;
+    border: none;
+    background-color: darkblue;
+}
+.main-trans{
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    height: 120px; 
+}
+.text-Transaction{
+    color: white;
+    font-size: 30px;
+}
+#income-button:hover{
+    background-color: rgb(45, 72, 230);
+}
+#income-button{
+    color: white;
+    border: none;
+    background-color: darkblue;
+}
+#expense-button:hover{
+   background-color: rgb(45, 72, 230);
+}
+#expense-button{
+    color: white;
+    border: none;
+    background-color: darkblue;
+}
+#add-income:hover{
+    background-color: rgb(45, 72, 230);
+}
+#add-income{
+    color: white;
+    border: none;
+    background-color: darkblue;
+}
