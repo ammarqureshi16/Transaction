@@ -20,8 +20,13 @@ function login() {
       alert(errorMessage);
     });
 }
-function gotoFacebook(){
-    location.href="https://www.facebook.com/"
+// function gotoFacebook(){
+//     location.href="https://www.facebook.com/"
+// }
+function create(){
+  // alert("AMmar ")
+  window.location.href="Sign Up.html"
+  
 }
 
 function logout() {

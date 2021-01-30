@@ -35,11 +35,11 @@
     margin-bottom: 10%;
 }
 .btn-div{
-    border: solid bl;
+    border: solid none;
     width: 100%;
 }
 
-#singup-button{
+#login-button{
     background-color: rgb(72, 170, 228);
     border: none;
     border-radius:  20px;
@@ -49,15 +49,23 @@
     margin-left: 8%;
     margin-bottom: 5%;
 }
-#fb-button{
+/* #fb-button{
     margin-left: 8%;
     background-color: #415B92;
     color: white;
     width: 80%;
     border-radius: 25px;
-    /* font-size: 5px; */
+    margin-bottom: 5%;
+    font-size: 5px;
+} */
+#create-button{
+    margin-left: 8%;
+    background-color: #36A420;
+    color: white;
+    width: 80%;
+    border-radius: 25px;
 }
-#twitter-btn{ 
+/* #twitter-btn{ 
     margin-top: 5%;
     font-size: 12px;
     height: 2rem;
@@ -65,4 +73,4 @@
     background-color: blue;
     color: white;
     border-radius: 25px;
-}
+} */

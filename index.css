@@ -28,6 +28,26 @@
     margin-top: 50px;
     height: 120px; 
 }
+#amount-input{
+    border-radius: 10px;
+    margin-bottom: 8%;
+}
+#date-input{
+    border-radius: 10px;
+    margin-bottom: 8%;
+}
+#time-input{
+    border-radius: 10px;
+    margin-bottom: 8%;
+}
+#description-input{
+    border-radius: 10px;
+    margin-bottom: 8%;
+}
+#categories-input{
+    border-radius: 10px;
+    margin-bottom: 8%;
+}
 .text-Transaction{
     color: white;
     font-size: 30px;
