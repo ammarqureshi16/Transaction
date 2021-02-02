@@ -21,7 +21,8 @@
     <!-- Nav bar Satard her -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container-fluid">
-        <a style="color: white" class="navbar-brand" href="#"> Navbar </a>
+        
+        <a id="user-name" style="color: white" class="navbar-brand" href="#">  </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -198,7 +199,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              onclick="income(event)"
+              onclick="addIncome()"
               id="add-income"
               type="button"
               class="btn btn-primary"
@@ -211,18 +212,44 @@
         </div>
       </div>
     </div>
-    <div id="table-div">
-      <table id="table-user" class="table table-hover table-dark">
-        <thead>
+    <!-- <div id="table-div"> -->
+      <!-- <table id="table-user" class="table">
+        <thead class="table-dark">
           <tr>
             <th class="table-dark" scope="col">Amount</th>
             <th class="table-dark" scope="col">Date</th>
             <th class="table-dark" scope="col">Time</th>
-            <th class="table-dark" scope="col">Project</th>
-          </tr>
-        </thead>
+            <th class="table-dark" scope="col">Description</th>
+            <th class="table-dark" scope="col">Categories</th> -->
+          <!-- </tr> -->
+        <!-- </thead>
+        <tbody id="table-body">
+
+        </tbody> -->
+
+      <!-- </table> -->  
+      <table id="table-body" style="width: 100%; background-color: black;color: white;">
+        <tr>
+          <th>
+            Amount  
+          </th>
+          <th>
+             Date
+          </th>
+          <th>
+           Time
+          </th>
+          <th>
+          Description
+          </th>
+          <th>
+              categories
+          </th>
+        </tr>
+        
       </table>
-    </div>
+      
+    <!-- </div> -->
   </body>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>

@@ -4,9 +4,11 @@ function create() {
     const email=document.getElementById("email-input").value
     const password=document.getElementById("password-input").value
 
+    localStorage.setItem("userName",JSON.stringify(fullName))
+
     firebase
     .auth()
-    .signInWithEmailAndPassword(email,password)
+    .createUserWithEmailAndPassword(email,password)
     .then((user) => {
       console.log("user=>>", user);
       alert(" Signup Successfully ")

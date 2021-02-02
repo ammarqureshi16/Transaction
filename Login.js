@@ -1,3 +1,4 @@
+console.log(firebase.firestore)
 function login() {
   const email = document.getElementById("email-input").value;
   const password = document.getElementById("password-input").value;
@@ -9,9 +10,11 @@ function login() {
   firebase
     .auth()
     .signInWithEmailAndPassword(email, password)
-    .then((user) => {
-      console.log("user=>>", user);
-      // alert(" Signup Successfully ")
+    .then((Response) => {
+      console.log(Response.user.uid);
+      let userId=Response.user.uid
+      localStorage.setItem("userID",JSON.stringify(userId))
+      alert(" Login Successfully ")
       window.location.href = "./Transaction.html";
     })
     .catch((error) => {
@@ -36,7 +39,8 @@ function logout() {
     .signOut()
     .then((res) => {
 // alert(";kkhkghjg")
-        console.log("Success Logot")
+        console.log("Success Logout")
+        localStorage.clear();
         window.location.href="./Login.html"
     }).catch(e=>{
         console.log(e)
