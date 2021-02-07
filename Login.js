@@ -34,7 +34,7 @@ function create(){
 
 function logout() {
   // alert("logo");
-  firebase
+    firebase
     .auth()
     .signOut()
     .then((res) => {
@@ -45,6 +45,5 @@ function logout() {
     }).catch(e=>{
         console.log(e)
     });
-
   console.log("Logout");
 }
