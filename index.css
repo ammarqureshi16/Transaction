@@ -76,3 +76,7 @@
     border: none;
     background-color: darkblue;
 }
+.modalDiv{
+    margin-bottom: 5%;
+    /* border: solid red; */
+}

@@ -3,7 +3,6 @@ function create() {
     const fullName=document.getElementById("full-name-input").value
     const email=document.getElementById("email-input").value
     const password=document.getElementById("password-input").value
-
     localStorage.setItem("userName",JSON.stringify(fullName))
 
     firebase

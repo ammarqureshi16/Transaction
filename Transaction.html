@@ -21,115 +21,119 @@
     <!-- Nav bar Satard her -->
     <div>
       <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-dark">
-      <div class="container-fluid">
-        <a id="user-name" style="color: white;" class="navbar-brand" href="#">  </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul id="parent-ul" class="navbar-nav">
-            <li class="nav-item">
-              <a
-                style="color: white"
-                class="nav-link active"
-                aria-current="page"
-                href="#"
-              >
-                Home
-              </a>
-        f    </li>
-            <li class="nav-item">
-              <a style="color: white" class="nav-link" href="#"> Features </a>
-            </li>
-            <li class="nav-item">
-              <a style="color: white" class="nav-link" href="#"> Pricing </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                style="color: white"
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown link
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#"> Action </a></li>
-                <li><a class="dropdown-item" href="#"> Another action </a></li>
-                <li>
-                  <a class="dropdown-item" href="#"> Something else here </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div class="container-fluid">
+          <a id="user-name" style="color: white" class="navbar-brand" href="#">
+          </a>
           <button
-            style="background-color: rgb(26, 24, 24); color: white;margin-left: 72%;"
-            onclick="logout();"
-            class="btn btn-pirmray"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-power"
-              viewBox="0 0 16 16"
-            >
-              <path d="M7.5 1v7h1V1h-1z" />
-              <path
-                d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"
-              />
-            </svg>
+            <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul id="parent-ul" class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  style="color: white"
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#"
+                >
+                  Home
+                </a>
+                f
+              </li>
+              <li class="nav-item">
+                <a style="color: white" class="nav-link" href="#"> Features </a>
+              </li>
+              <li class="nav-item">
+                <a style="color: white" class="nav-link" href="#"> Pricing </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  style="color: white"
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown link
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#"> Action </a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Another action </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"> Something else here </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <button
+              style="
+                background-color: rgb(26, 24, 24);
+                color: white;
+                margin-left: 72%;
+              "
+              onclick="logout();"
+              class="btn btn-pirmray"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-power"
+                viewBox="0 0 16 16"
+              >
+                <path d="M7.5 1v7h1V1h-1z" />
+                <path
+                  d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </div>
     <!-- Nav Bar end -->
     <!-- Filter stard -->
     <div class="maindiv">
-      <h3><i>
-         Filter bby 
-        </i></h3>
+      <h3><i> Filter bby </i></h3>
       <div class="firstdiv">
         <label
-          ><i><b>
-             Type 
-            </b></i></label
+          ><i><b> Type </b></i></label
         >
-        <select class="form-control">
-          <option> 
-            Expense 
-          </option>
-          <option> 
-            Income 
-          </option>
+        <select id="type-filter" class="form-control">
+          <option>Expense</option>
+          <option>income</option>
+          <option>All</option>
         </select>
       </div>
       <div>
         <label
-          ><i><b> 
-            Date 
-          </b></i></label
+          ><i><b> Date </b></i></label
         >
         <input type="date" />
       </div>
       <div>
-        <button id="apply-button" type="button" class="btn btn-primary">
+        <button
+          id="apply-button"
+          onclick="filter()"
+          type="button"
+          class="btn btn-primary"
+        >
           Apply
         </button>
       </div>
@@ -137,9 +141,7 @@
     <!--Filter end  -->
     <div class="main-trans">
       <div class="text-Transaction">
-        <h1> 
-          Transaction 
-        </h1>
+        <h1>Transaction</h1>
       </div>
       <div>
         <button
@@ -147,7 +149,7 @@
           type="button"
           class="btn btn-primary"
           data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
+          data-bs-target="#incomeModal"
         >
           + Income
         </button>
@@ -156,26 +158,25 @@
           type="button"
           class="btn btn-primary"
           data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
+          data-bs-target="#expenseModal"
         >
           + Expense
         </button>
       </div>
     </div>
-    <!-- Modal -->
+
+    <!-- Expense Modal Open -->
     <div
       class="modal fade"
-      id="exampleModal"
+      id="expenseModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog" id="modal">
+      <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"> 
-              Icome Modal
-            </h5>
+            <h5 class="modal-title" id="exampleModalLabel"> Expense Modal </h5>
             <button
               type="button"
               class="btn-close"
@@ -183,27 +184,96 @@
               aria-label="Close"
             ></button>
           </div>
-          <div style="margin-top: 5%;" class="modal-body">
-            <label>
-               Amount: 
-              </label>
+          <div class="modal-body">
+            <label> Amount : </label>
+            <input
+              id="expenseAmount"
+              class="form-control"
+              type="number"
+              placeholder="Amount"
+            />
+
+            <div class="modalDiv">
+              <label> Date : </label>
+              <input
+                id="expenseDate"
+                class="form-control"
+                type="date"
+                placeholder="Recieving date"
+              />
+            </div>
+            <div class="modalDiv">
+              <label> Time : </label>
+              <input
+                id="expenseTime"
+                class="form-control"
+                type="number"
+                placeholder="Recieving time"
+              />
+            </div>
+            <div class="modalDiv">
+              <label> Description : </label>
+              <input
+                id="expenseDescription"
+                class="form-control"
+                type="text"
+                placeholder="Description"
+              />
+            </div>
+            <div class="modalDiv">
+              <label> Categories : </label>
+              <select id="expanseCategories" class="form-control">
+                <option selected>Project</option>
+                <option>Categories</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Add Expense</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Expense Modal Close -->
+    <!-- Income Modal Open  -->
+    <div
+      class="modal fade"
+      id="incomeModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" id="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Icome Modal</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div style="margin-top: 5%" class="modal-body">
+            <label> Amount: </label>
             <input
               id="amount"
               class="form-control"
               type="number"
               placeholder="Current Amount"
             />
-            <label> 
-              Date: 
-            </label>
+            <label> Date: </label>
             <input id="date-input" type="date" class="form-control" />
-            <label> 
-              Time: 
-            </label>
+            <label> Time: </label>
             <input id="time-input" type="time" class="form-control" />
-            <label>
-               Description: 
-              </label>
+            <label> Description: </label>
             <input
               id="description-input"
               class="form-control"
@@ -211,16 +281,10 @@
               cols="60"
               rows="4"
             />
-            <label> 
-              Categories:
-             </label>
+            <label> Categories: </label>
             <select id="categories-input" class="form-control">
-              <option selected>
-                 Project 
-                </option>
-              <option>
-                 Categories
-                 </option>
+              <option selected>Project</option>
+              <option>Categories</option>
             </select>
           </div>
           <div class="modal-footer">
@@ -239,28 +303,22 @@
         </div>
       </div>
     </div>
-    <div>    
-      <table id="table-body" style="width: 100%; background-color: black;color: white;">
+    <!-- Icome Modal Closed -->
+    <div>
+      <table
+        id="table-body"
+        style="width: 100%; background-color: black; color: white"
+      >
         <tr>
-          <th>
-            Amount  
-          </th>
-          <th>
-             Date
-          </th>
-          <th>
-           Time
-          </th>
-          <th>
-          Description
-          </th>
-          <th>
-              categories
-          </th>
+          <th>Amount</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Description</th>
+          <th>categories</th>
         </tr>
       </table>
     </div>
-      
+
     <!-- </div> -->
   </body>
   <!-- The core Firebase JS SDK is always required and must be listed first -->
