@@ -48,6 +48,14 @@
     border-radius: 10px;
     margin-bottom: 8%;
 }
+/* #expenseAmount{
+    border-radius: 10px;
+    margin-bottom: 2%;
+} */
+#expenseDescription{
+    padding: 10%;
+    border-radius: 10px;
+}
 .text-Transaction{
     color: white;
     font-size: 30px;

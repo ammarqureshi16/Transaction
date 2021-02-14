@@ -36,7 +36,9 @@ function getname() {
     });
 }
 getname();
-// getTransaction();
+getTransaction();
+
+// Income Function Stard
 function addIncome() {
   const amount = document.getElementById("amount").value;
   const date = document.getElementById("date-input").value;
@@ -65,6 +67,8 @@ function addIncome() {
       alert(error.message);
     });
 }
+// Income Function Close
+// Transaction Stard
 function getTransaction() {
   // const userMainId=localStorage.getItem("userId")
   db.collection("Transaction")
@@ -73,7 +77,7 @@ function getTransaction() {
     .then(function (snapshot) {
       snapshot.forEach(function (doc) {
         let data = doc.data();
-        console.log("data--->>", data);
+        console.log(data);
         // console.log(data.description)
         const tablebody = document.getElementById("table-body");
 
@@ -104,6 +108,8 @@ function getTransaction() {
       alert(error.message);
     });
 }
+// Transaction Function Close
+// Filter Function Stard
 function filter() {
   // alert("----->>>")
   const userId = localStorage.getItem("userID");
@@ -113,12 +119,14 @@ function filter() {
   if (type === "All") {
     return getTransaction();
   }
+
   const tablebody = document.getElementById("table-body");
   firebase
     .firestore()
     .collection("Transaction")
     .where("type", "==", type)
     .where("userID", "==", userId)
+    .orderBy("date", "desc")
     .get()
     .then(function (snapshot) {
       snapshot.forEach(function (doc) {
@@ -149,6 +157,44 @@ function filter() {
       });
     })
     .catch(function (error) {
+      console.log(error.message);
+    });
+}
+// Filter Function Close
+// Income Work Close
+// Expense Work Stard And Expanse Function Stard
+function typeExpanse() {
+  const amount = document.getElementById("expenseAmount").value;
+  const date = document.getElementById("expenseDate").value;
+  const time = document.getElementById("expenseTime").value;
+  const description = document.getElementById("expenseDescription").value;
+  const categories = document.getElementById("expanseCategories").value;
+
+  firebase
+    .firestore()
+    .collection("Transaction")
+    .add({
+      userName: item,
+      userID: userId,
+      amount: amount,
+      date: date,
+      time: time,
+      description: description,
+      categories: categories,
+      type: "Expense",
+    })
+    .then(function () {
+      // alert("Transaction Save");
+      swal({
+        title: "Transaction Save!",
+        // text: "You clicked the button!",
+        icon: "success",
+        button: "Aww yiss!",
+      });
+      $("exampleModalLabel").modal("hide");
+    })
+    .catch(function (error) {
       alert(error.message);
     });
 }
+// TypeExpense Work Close

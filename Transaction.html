@@ -204,11 +204,9 @@
             </div>
             <div class="modalDiv">
               <label> Time : </label>
-              <input
-                id="expenseTime"
-                class="form-control"
-                type="number"
-                placeholder="Recieving time"
+              <input id="expenseTime" 
+              type="time"
+              class="form-control" 
               />
             </div>
             <div class="modalDiv">
@@ -236,7 +234,13 @@
             >
               Close
             </button>
-            <button type="button" class="btn btn-primary">Add Expense</button>
+            <button
+              type="button"
+              onclick="typeExpanse()"
+              class="btn btn-primary"
+            >
+              Add Expense
+            </button>
           </div>
         </div>
       </div>
@@ -347,5 +351,7 @@
   </script>
   <script src="transaction.js"></script>
   <script src="Login.js"></script>
-  <script></script>
+  <!-- <script></script> -->
+  <!-- Sweet Alert Link -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>
