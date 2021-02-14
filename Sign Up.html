@@ -1,52 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="Sign Up.css" />
-    <title> Sign Up </title>
-</head>
-<body style="background-image: url(Imag\ Three.jpeg);background-repeat: no-repeat ;">
+    <title>Sign Up</title>
+  </head>
+  <body
+    style="
+      background-image: url(Imag\ Three.jpeg);
+      background-repeat: no-repeat;
+    "
+  >
     <!-- Main Div Open -->
     <div id="main-div">
-        <!-- Card Div Open -->
-        <div id="card-div">
-            <img
+      <!-- Card Div Open -->
+      <div id="card-div">
+        <img
           src="Login logo.jpeg"
           alt="Avatar"
           style="width: 100px; border-radius: 50%; margin-left: 32%"
         />
-            <h1 id="heading-signup"> Sign Up </h1>
-            <input id="full-name-input" type="text" class="form-control input-field" placeholder=" Full Name " />
-            <input id="email-input" type="email" class="form-control input-field" placeholder="Email" />
-            <input id="password-input" type="password" class="form-control input-field" placeholder="Password" />
-            <!-- Botton Div Open -->
-            <div>
-            <button id="signUp-button" type="button" class="btn btn-success" onclick="create()"> Sign Up </button>
-            </div>
-            <!-- Button Div Close -->
+        <h1 id="heading-signup">Sign Up</h1>
+        <input
+          id="full-name-input"
+          type="text"
+          class="form-control input-field"
+          placeholder=" Full Name "
+        />
+        <input
+          id="email-input"
+          type="email"
+          class="form-control input-field"
+          placeholder="Email"
+        />
+        <input
+          id="password-input"
+          type="password"
+          class="form-control input-field"
+          placeholder="Password"
+        />
+        <!-- Botton Div Open -->
+        <div>
+          <button
+            id="signUp-button"
+            type="button"
+            class="btn btn-success"
+            onclick="create()"
+          >
+            Sign Up
+          </button>
         </div>
-        <!-- Card Div Close -->
+        <!-- Button Div Close -->
+      </div>
+      <!-- Card Div Close -->
     </div>
     <!-- Main Div Close -->
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyBQN8yAISzHKk5YKOWtn_ey022phlDElqs",
-    authDomain: "test-app-82515.firebaseapp.com",
-    projectId: "test-app-82515",
-    storageBucket: "test-app-82515.appspot.com",
-    messagingSenderId: "751659478170",
-    appId: "1:751659478170:web:af6050e95568dc78864323",
-    measurementId: "G-T0G15L7PE6"};
-  firebase.initializeApp(firebaseConfig);
-  firebase.auth();
-</script>
-<script src="Sign Up.js">
-</script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBQN8yAISzHKk5YKOWtn_ey022phlDElqs",
+      authDomain: "test-app-82515.firebaseapp.com",
+      projectId: "test-app-82515",
+      storageBucket: "test-app-82515.appspot.com",
+      messagingSenderId: "751659478170",
+      appId: "1:751659478170:web:af6050e95568dc78864323",
+      measurementId: "G-T0G15L7PE6",
+    };
+    firebase.initializeApp(firebaseConfig);
+    firebase.auth();
+  </script>
+  <script src="Sign Up.js"></script>
 </html>

@@ -1,53 +1,53 @@
-#main-div{
-    display: flex;
-    justify-content: center;
-    border: none;
-    /* height: 39rem; */
-    /* width: 80rem; */
-    /* margin-left: 4%; */
-    /* background-image: url();
+#main-div {
+  display: flex;
+  justify-content: center;
+  border: none;
+  /* height: 39rem; */
+  /* width: 80rem; */
+  /* margin-left: 4%; */
+  /* background-image: url();
     background-repeat: no-repeat; */
 }
-#card-div{
-    /* justify-content: center; */
-    border:none;
-    margin-top: 2rem;
-    height: 30rem;
-    width: 25%;
-    border-radius: 5%;
-    background-color: white;
-    padding: 8px;
+#card-div {
+  /* justify-content: center; */
+  border: none;
+  margin-top: 2rem;
+  height: 30rem;
+  width: 25%;
+  border-radius: 5%;
+  background-color: white;
+  padding: 8px;
 }
-#heading-signup{
-    border: none;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 9%;
+#heading-signup {
+  border: none;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 9%;
 }
-#full-name-input{
-    border-radius: 10px;
-    margin-bottom: 8%;
+#full-name-input {
+  border-radius: 10px;
+  margin-bottom: 8%;
 }
-#email-input{
-    border-radius: 10px;
-    margin-bottom: 8%;
+#email-input {
+  border-radius: 10px;
+  margin-bottom: 8%;
 }
-#password-input{
-    border-radius: 10px;
-    margin-bottom: 8%;
+#password-input {
+  border-radius: 10px;
+  margin-bottom: 8%;
 }
-#btn-div{
-    /* align-items: center; */
-    border: solid none;
-    width: 100%;
+#btn-div {
+  /* align-items: center; */
+  border: solid none;
+  width: 100%;
 }
-#signUp-button{
-    background-color: #36A420;
-    border: none;
-    border-radius:  20px;
-    width: 80%;
-    padding: 8px;
-    color: white;
-    margin-left: 8%;
-    /* margin-bottom: 5%; */
+#signUp-button {
+  background-color: #36a420;
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  padding: 8px;
+  color: white;
+  margin-left: 8%;
+  /* margin-bottom: 5%; */
 }

@@ -1,4 +1,4 @@
-console.log(firebase.firestore)
+console.log(firebase.firestore);
 function login() {
   const email = document.getElementById("email-input").value;
   const password = document.getElementById("password-input").value;
@@ -12,9 +12,9 @@ function login() {
     .signInWithEmailAndPassword(email, password)
     .then((Response) => {
       console.log(Response.user.uid);
-      let userId=Response.user.uid
-      localStorage.setItem("userID",JSON.stringify(userId))
-      alert(" Login Successfully ")
+      let userId = Response.user.uid;
+      localStorage.setItem("userID", JSON.stringify(userId));
+      alert(" Login Successfully ");
       window.location.href = "./Transaction.html";
     })
     .catch((error) => {
@@ -26,24 +26,24 @@ function login() {
 // function gotoFacebook(){
 //     location.href="https://www.facebook.com/"
 // }
-function create(){
+function create() {
   // alert("AMmar ")
-  window.location.href="Sign Up.html"
-  
+  window.location.href = "Sign Up.html";
 }
 
 function logout() {
   // alert("logo");
-    firebase
+  firebase
     .auth()
     .signOut()
     .then((res) => {
-// alert(";kkhkghjg")
-        console.log("Success Logout")
-        localStorage.clear();
-        window.location.href="./Login.html"
-    }).catch(e=>{
-        console.log(e)
+      // alert(";kkhkghjg")
+      console.log("Success Logout");
+      localStorage.clear();
+      window.location.href = "./Login.html";
+    })
+    .catch((e) => {
+      console.log(e);
     });
   console.log("Logout");
 }

@@ -1,53 +1,53 @@
-.main-div{
-    border: none;
-    display: flex;
-    justify-content: center;
-    height: 39rem;
-    width: 80rem;
-    margin-left: 4%;
-    background-image: url(Imag\ Three.jpeg);
-    background-repeat: no-repeat;
+.main-div {
+  border: none;
+  display: flex;
+  justify-content: center;
+  height: 39rem;
+  width: 80rem;
+  margin-left: 4%;
+  background-image: url(Imag\ Three.jpeg);
+  background-repeat: no-repeat;
 }
-.card-div{    
-    justify-content: center;
-    border:none;
-    margin-top: 5rem;
-    height: 30rem;
-    width: 25%;
-    border-radius: 5%;
-    background-color: white;
-    padding: 8px;
+.card-div {
+  justify-content: center;
+  border: none;
+  margin-top: 5rem;
+  height: 30rem;
+  width: 25%;
+  border-radius: 5%;
+  background-color: white;
+  padding: 8px;
 }
-.heading-login{
-    border: none;
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 9%;
+.heading-login {
+  border: none;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 9%;
 }
-.input-field{
-    margin-bottom: 15px;
+.input-field {
+  margin-bottom: 15px;
 }
-#email-input{
-    border-radius: 10px;
+#email-input {
+  border-radius: 10px;
 }
-#password-input{
-    border-radius: 10px;
-    margin-bottom: 10%;
+#password-input {
+  border-radius: 10px;
+  margin-bottom: 10%;
 }
-.btn-div{
-    border: solid none;
-    width: 100%;
+.btn-div {
+  border: solid none;
+  width: 100%;
 }
 
-#login-button{
-    background-color: rgb(72, 170, 228);
-    border: none;
-    border-radius:  20px;
-    width: 80%;
-    padding: 8px;
-    color: white;
-    margin-left: 8%;
-    margin-bottom: 5%;
+#login-button {
+  background-color: rgb(72, 170, 228);
+  border: none;
+  border-radius: 20px;
+  width: 80%;
+  padding: 8px;
+  color: white;
+  margin-left: 8%;
+  margin-bottom: 5%;
 }
 /* #fb-button{
     margin-left: 8%;
@@ -58,12 +58,12 @@
     margin-bottom: 5%;
     font-size: 5px;
 } */
-#create-button{
-    margin-left: 8%;
-    background-color: #36A420;
-    color: white;
-    width: 80%;
-    border-radius: 25px;
+#create-button {
+  margin-left: 8%;
+  background-color: #36a420;
+  color: white;
+  width: 80%;
+  border-radius: 25px;
 }
 /* #twitter-btn{ 
     margin-top: 5%;
