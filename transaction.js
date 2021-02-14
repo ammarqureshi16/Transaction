@@ -60,8 +60,14 @@ function addIncome() {
     })
     .then(function () {
       // swal("Transaction Save");
-      alert("Transaction Save");
-      $("exampleModalLabel").modal("hide");
+      // alert("Transaction Save");
+      swal({
+        title: "Transaction Save!",
+        // text: "You clicked the button!",
+        icon: "success",
+        button: "Aww yiss!",
+      });
+      $("#incomeModal").modal("hide");
     })
     .catch(function (error) {
       alert(error.message);
@@ -189,9 +195,9 @@ function typeExpanse() {
         title: "Transaction Save!",
         // text: "You clicked the button!",
         icon: "success",
-        button: "Aww yiss!",
+        // button: "Aww yiss!",
       });
-      $("exampleModalLabel").modal("hide");
+      $("#expenseModal").modal("hide");
     })
     .catch(function (error) {
       alert(error.message);
