@@ -188,9 +188,11 @@ function typeExpanse() {
       description: description,
       categories: categories,
       type: "Expense",
+      imgUrl: "",
     })
     .then(function () {
       // alert("Transaction Save");
+
       swal({
         title: "Transaction Save!",
         // text: "You clicked the button!",
@@ -204,3 +206,4 @@ function typeExpanse() {
     });
 }
 // TypeExpense Work Close
+

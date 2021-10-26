@@ -18,26 +18,19 @@ function login() {
       window.location.href = "./Transaction.html";
     })
     .catch((error) => {
-      var errorCode = error.code;
       var errorMessage = error.message;
+      var errorCode = error.code;
       alert(errorMessage);
     });
 }
-// function gotoFacebook(){
-//     location.href="https://www.facebook.com/"
-// }
 function create() {
-  // alert("AMmar ")
   window.location.href = "Sign Up.html";
 }
-
 function logout() {
-  // alert("logo");
   firebase
     .auth()
     .signOut()
     .then((res) => {
-      // alert(";kkhkghjg")
       console.log("Success Logout");
       localStorage.clear();
       window.location.href = "./Login.html";
